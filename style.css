@@ -12,27 +12,29 @@ body{
     height: 100%;
     position: relative;
     align-content: center;
+    margin-top: 3%;
 }
-.wrap{
-    width: 500px;
-    margin: auto;
-}
+
 .list-title{
     text-align: center;
     font-weight: 700;
     font-size: 42px;
     color: #F5A628;
+    margin: 10px 50px 20px 50px;
 }
-.inner-wrap{
+.inner-wrapper{
+    width: 450px;
+    min-width: 300px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
+    padding: 20px;
     background-color: #FFF8EC;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgb(0, 0,0,20%);
 }
-.form{
+form{
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 2px rgb(0, 0,0,20%); 
@@ -41,7 +43,7 @@ body{
     height: 35px;
     width: 300px;
 }
-.input{
+input{
     flex: 1;
     outline: none;
     border-radius: 20px;
@@ -49,8 +51,9 @@ body{
     border: 0px;
     padding: 10px 20px;
     cursor: pointer;
+    
 }
-.add{
+button{
     border-style: none;
     border-radius: 20px;
     width: 70px;
@@ -123,5 +126,14 @@ body{
 .delete:hover{
     cursor: pointer;
     background-image: url(./assets/trash-hover.png);
+}
+
+@media(max-width:576px){
+    .list-title{
+        font-size: 32px;
+    }
+    .inner-wrapper{
+        width: 30%;
+    }
 }
 
